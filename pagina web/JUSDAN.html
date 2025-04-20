@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Página Informativa</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f8;
+    }
+
+    header {
+      background-color: rgb(16, 1, 151);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background-color: rgb(16, 1, 151);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .image-gallery {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 340px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bienvenido a tienda Jusdan</h1>
+    <p>INFORMACION DE JUSDAN</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Quién somos?</h2>
+      <p>Hola, (MAS INFORMACION ADICIONAL DE LA EMPRESA).</p>
+    </section>
+
+    <section>
+      <h2>¿Qué podras encontrar en esta tienda?</h2>
+      <ul>
+        <li>Información sobre proyectos</li>
+        <li>******</li>
+        <li>numero de Contactos:</li>
+        <li>numero de Contactos:</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Galería de Imágenes</h2>
+      <div class="image-gallery">
+        <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+        <img src="imagenes/foto1.jpg" alt="Mi foto o proyecto">
+        <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+        <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+        <img src="https://via.placeholder.com/200" alt="Imagen de ejemplo">
+        <img src="https://via.placeholder.com/200x150" alt="Ejemplo adicional">
+      </div>
+    </section>
+
+    <section>
+      <h2>Video</h2>
+      <div class="video-container">
+        <!-- Opción 1: Video local -->
+        <video controls>
+          <source src="videos/mi_video.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+
+        <br><br>
+
+        <!-- Opción 2: Video de YouTube -->
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="Video de YouTube" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Mi Página Web | Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
